@@ -4,7 +4,7 @@ class Solution {
         int n = nums.length;
         int i=0;
         int count=0;
-        int j=i+1;
+        int j=0;
        while (j < n) {
             if (i == j || nums[j] - nums[i] < k) {
                 j++;
