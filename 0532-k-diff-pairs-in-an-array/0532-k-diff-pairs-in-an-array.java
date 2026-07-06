@@ -5,7 +5,6 @@ class Solution {
         int i=0;
         int count=0;
         int j=i+1;
-        int ans =0;
        while (j < n) {
             if (i == j || nums[j] - nums[i] < k) {
                 j++;
