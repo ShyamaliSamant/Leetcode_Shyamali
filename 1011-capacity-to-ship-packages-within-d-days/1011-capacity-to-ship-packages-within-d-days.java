@@ -7,17 +7,17 @@ class Solution {
             low = Math.max(low,w[i]);
             high+=w[i];
         }
-        long ans =high;
+        int ans =high;
             while(low<=high){
-             mid = low+(high-low)/2;
-              int requiredDays = 1;
+             mid = low+(high-low)/2;       
+        int requiredDays = 1;
         int currentWeight = 0;
         for (int weight : w) {
          if (currentWeight + weight <= mid) {
-        currentWeight += weight;
-    } else {
-        requiredDays++;
-        currentWeight = weight;
+          currentWeight += weight;
+    }     else {
+         requiredDays++;
+         currentWeight = weight;
     }
 }
            if(requiredDays<=days){
