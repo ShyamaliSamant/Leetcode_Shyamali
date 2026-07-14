@@ -23,7 +23,7 @@ class Solution {
         q.offer(root);
         while(q.isEmpty() == false){
             int size = q.size();
-            List<Integer> list = new ArrayList<>();
+            // List<Integer> list = new ArrayList<>();
             for(int i=0 ; i<size; i++){
                 TreeNode node = q.poll();
                if(i==size -1){
