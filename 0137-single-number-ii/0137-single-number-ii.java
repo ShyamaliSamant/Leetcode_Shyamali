@@ -1,10 +1,10 @@
 class Solution {
     public int singleNumber(int[] nums) {
         Arrays.sort(nums);
-        int i =0;
+        int i=0;
         while(i<nums.length){
             int count =1;
-            while(i+1<nums.length && nums[i+1] ==nums[i]){
+            while(i+1<nums.length && nums[i]==nums[i+1]){
                 count++;
                 i++;
             }
