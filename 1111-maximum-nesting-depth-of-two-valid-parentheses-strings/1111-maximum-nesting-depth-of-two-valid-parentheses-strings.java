@@ -19,7 +19,7 @@ class Solution {
         }
         int[] ans = new int[n];
         for(int i=0; i< n; i++){
-            if(depth[i] <= (maxDepth/2))
+            if(depth[i] %2 ==0)
             ans[i] =0;
 
             else
