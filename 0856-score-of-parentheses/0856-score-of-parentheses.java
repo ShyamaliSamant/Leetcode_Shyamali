@@ -8,7 +8,7 @@ class Solution {
 
             else{
             int val = st.pop();
-            int score;
+            int score =0;
             if(val ==0) {
                 score =1;
             }else{
