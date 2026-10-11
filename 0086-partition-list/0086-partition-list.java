@@ -13,23 +13,22 @@ class Solution {
         ListNode lessD = new ListNode(0);
         ListNode greaterD = new ListNode(0);
 
+        ListNode curr = head;
         ListNode less = lessD;
         ListNode greater = greaterD;
-
-        ListNode curr = head;
         while(curr != null){
             if(curr.val >= x){
                 greater.next = curr;
                 greater = greater.next;
             }else{
                 less.next = curr;
-                less= less.next;
+                less = less.next;
             }
-            curr = curr.next;  
+            curr = curr.next;
         }
-     
-        greater.next = null;
+        greater.next =null;
         less.next = greaterD.next;
+
         return lessD.next;
     }
 }
