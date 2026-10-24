@@ -6,10 +6,8 @@ class Solution {
         int right = arr.length - 1;
         while (left < right) {
             while (left < right && !isVowel(arr[left])) left++;
-            
-            while (left < right && !isVowel(arr[right])) {
-                right--;
-            }
+
+            while (left < right && !isVowel(arr[right])) right--;
             if (left < right) {
                 char temp = arr[left];
                 arr[left] = arr[right];
