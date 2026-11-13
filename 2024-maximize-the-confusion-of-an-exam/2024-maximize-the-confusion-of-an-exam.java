@@ -5,7 +5,6 @@ class Solution {
         int ans =0;
         int n = answerKey.length();
         int left =0;
-        if(n <=1) return 1;
         for(int i=0; i<n; i++){
             if(answerKey.charAt(i) == 'T'){
                 tcount++;
